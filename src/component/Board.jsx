@@ -1,7 +1,8 @@
 import React from "react";
 import Header from "./Header";
 import Center from "./Center";
-import Sidebar from "./Sidebar";
+import SidebarR from "./Sidebar";
+import "./Board.css"
 
 
 class Board extends React.Component {
@@ -14,9 +15,9 @@ class Board extends React.Component {
       <div className="Board">
         {console.log(this.props.data)}
         <Header data={this.props.data["breaking news"]} />
-        <Sidebar data={this.props.data.data} />
+        <SidebarR data={this.props.data.data} />
         <Center data={this.props.data} />
-        <Sidebar data={this.props.data.data} />
+        <SidebarR data={this.props.data.data} />
       </div>
     );
   }
