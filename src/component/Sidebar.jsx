@@ -1,4 +1,4 @@
-import DataS  from "./Data";
+import DataS from "./Data";
 import React from "react";
 class SidebarR extends React.Component {
   constructor(props) {
@@ -7,10 +7,10 @@ class SidebarR extends React.Component {
   }
   render() {
     return (
-      <div className="Sidebar">
-        <DataS data={this.props.data} />
-        <DataS data={this.props.data} />
-        <DataS data={this.props.data} />
+      <div className='Sidebar'>
+        <DataS data={this.props.data["energy use"]} />
+        <DataS data={this.props.data.temperature} />
+        <DataS data={this.props.data["atmospheric pressure"]} />
       </div>
     );
   }
