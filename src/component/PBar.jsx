@@ -7,6 +7,7 @@ class PBar extends React.Component {
         this.setState({
             critical: false
         });
+        this.isCritical(props);
     }
 
     isCritical(props){
@@ -19,13 +20,12 @@ class PBar extends React.Component {
 
     }
 
-    render(props) { 
-        this.isCritical(props);
+    render() { 
         return (
             <div>
                 <ProgressBar 
-                animated now={(props.actual/props.max) * 100} 
-                striped variant = {this.critical ? "success":"danger"}/>
+                animated now={(this.props.actual/this.props.max) * 100} 
+                striped variant = {this.state.critical ? "success":"danger"}/>
                 {this.state.critical}
             </div>
 
