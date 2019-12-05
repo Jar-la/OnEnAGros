@@ -9,7 +9,7 @@ class board extends Component {
   }
   render() {
     return (
-      <div class='Board'>
+      <div className='Board'>
         <Header />
         <Sidebar />
         <Center />

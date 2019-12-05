@@ -7,7 +7,7 @@ class Home extends Component {
   }
   render() {
     return (
-      <div class='home'>
+      <div className='home'>
         <board data={this.props.data} />
       </div>
     );

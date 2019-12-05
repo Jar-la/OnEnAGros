@@ -8,7 +8,7 @@ class Center extends Component {
   }
   render() {
     return (
-      <div class='Center'>
+      <div className='Center'>
         <Alert />
         <Control />
       </div>

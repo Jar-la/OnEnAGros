@@ -6,7 +6,7 @@ class Control extends Component {
     this.state = {};
   }
   render() {
-    return <div class='Control'></div>;
+    return <div className='Control'></div>;
   }
 }
 

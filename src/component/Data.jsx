@@ -7,7 +7,7 @@ class Data extends Component {
     this.state = {};
   }
   render() {
-    return <div class='Data'></div>;
+    return <div className='Data'></div>;
   }
 }
 

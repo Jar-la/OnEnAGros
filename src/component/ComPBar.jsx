@@ -4,7 +4,7 @@ class ComPBar extends Component {
     this.state = {};
   }
   render() {
-    return <div class='ComPBar'></div>;
+    return <div className='ComPBar'></div>;
   }
 }
 
