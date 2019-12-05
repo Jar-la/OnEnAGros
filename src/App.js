@@ -39,7 +39,11 @@ class App extends React.Component{
         />
         <BrowserRouter>
           <Switch>
-            <Route exact path="/" component={Home} data={this.state.data} />
+            <Route
+              exact
+              path="/"
+              component={() => <Home data={this.state.data} />}
+            />
             <Route path="*" component={ErrorNotFound} />
           </Switch>
         </BrowserRouter>
