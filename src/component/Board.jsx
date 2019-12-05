@@ -2,7 +2,7 @@ import React from "react";
 import Header from "./Header";
 import Center from "./Center";
 import SidebarR from "./Sidebar";
-import "./Board.css"
+
 
 
 class Board extends React.Component {
