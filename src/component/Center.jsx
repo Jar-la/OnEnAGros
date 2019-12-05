@@ -12,8 +12,8 @@ class Center extends React.Component {
     return (
       <div className="Center">
         <Date data={this.props.data} />
-        <Alert data={this.props.data} />
         <Control />
+        <Alert data={this.props.data} />
       </div>
     );
   }
