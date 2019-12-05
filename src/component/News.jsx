@@ -1,6 +1,6 @@
 import React from "react";
 
-class News extends Component {
+class News extends React.Component {
   constructor(props) {
     super(props);
     this.state = {};
