@@ -19,16 +19,17 @@ class Alert extends React.Component {
   }
 
   getGoodAlert(){
-    return <Alert variant="success">
-    <Alert.Heading>Everything is ok</Alert.Heading>
+    return <AlertBoot variant="success">
+    <AlertBoot.Heading>Everything is ok</AlertBoot.Heading>
     <p>
       All the ressources are in good situations
     </p>
-  </Alert>;
+  </AlertBoot>;
   }
 
   render() {
     return <div className="Alert">
+      {this.state.isCritical? this.getBadAlert() : this.getGoodAlert()}
     </div>;
   }
 }
