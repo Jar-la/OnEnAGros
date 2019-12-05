@@ -1,19 +1,19 @@
-import Data  from "./Data";
+import DataS from "./Data";
 import React from "react";
-class Sidebar extends React.Component {
+class SidebarR extends React.Component {
   constructor(props) {
     super(props);
     this.state = {};
   }
   render() {
     return (
-      <div className="Sidebar">
-        <Data data={this.props.data} />
-        <Data data={this.props.data} />
-        <Data data={this.props.data} />
+      <div className='Sidebar'>
+        <DataS data={this.props.data["energy use"]} />
+        <DataS data={this.props.data.temperature} />
+        <DataS data={this.props.data["atmospheric pressure"]} />
       </div>
     );
   }
 }
 
-export default Sidebar;
+export default SidebarR;
