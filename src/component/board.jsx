@@ -1,19 +1,15 @@
-import { header } from "./header";
-import { center } from "./center";
-import { sidebar} from "./sidebar"
-    
-class board extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {  }
-    }
-    render() { 
-        return (  
-            <div class = "board">
+import { Header } from "./Header";
+import { Center } from "./Center";
+import { Sidebar } from "./Sidebar";
 
-            </div>
-        );
-    }
+class board extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
+  render() {
+    return <div class='Board'></div>;
+  }
 }
- 
-export default board;
+
+export default Board;

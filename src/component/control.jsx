@@ -1,13 +1,13 @@
-import {  } from "module";
+import {} from "module";
 
-class control extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {  }
-    }
-    render() { 
-        return ( <div class = "control"></div> );
-    }
+class Control extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
+  render() {
+    return <div class='Control'></div>;
+  }
 }
- 
-export default control;
+
+export default Control;

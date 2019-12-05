@@ -1,18 +1,14 @@
-import { alert } from "./alert";
-import { control } from "./control"
- 
-class center extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {  }
-    }
-    render() { 
-        return ( 
-            <div class = "center">
+import { Alert } from "./Alert";
+import { Control } from "./Control";
 
-            </div>
-         );
-    }
+class Center extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
+  render() {
+    return <div class='Center'></div>;
+  }
 }
- 
-export default center;
+
+export default Center;

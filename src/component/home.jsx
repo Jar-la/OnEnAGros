@@ -1,18 +1,17 @@
- import { board } from "./board";
+import { Board } from "./Board";
 
-
-class home extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {  }
-    }
-    render() { 
-        return (  
-            <div class = "home">
-
-            </div>
-        );
-    }
+class Home extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
+  render() {
+    return (
+      <div class='home'>
+        <board data={this.props.data} />
+      </div>
+    );
+  }
 }
- 
-export default home;
+
+export default Home;

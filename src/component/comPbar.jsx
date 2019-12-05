@@ -1,15 +1,11 @@
-class comPbar extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {  }
-    }
-    render() { 
-        return ( 
-            <div class= "comPbar">
-
-            </div>
-         );
-    }
+class ComPBar extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
+  render() {
+    return <div class='ComPBar'></div>;
+  }
 }
- 
-export default comPbar;
+
+export default ComPBar;

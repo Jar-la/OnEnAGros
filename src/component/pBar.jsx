@@ -1,4 +1,4 @@
-class pBar extends Component {
+class PBar extends Component {
     constructor(props) {
         super(props);
         this.state = {  }
@@ -12,4 +12,4 @@ class pBar extends Component {
     }
 }
  
-export default pBar;
+export default PBar;

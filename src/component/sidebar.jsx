@@ -1,4 +1,4 @@
-import { data } from "./data";
+import { Data } from "./Data";
 
 class sidebar extends Component {
   constructor(props) {
@@ -6,8 +6,8 @@ class sidebar extends Component {
     this.state = {};
   }
   render() {
-    return <div class='sidebar'></div>;
+    return <div class='Sidebar'></div>;
   }
 }
 
-export default sidebar;
+export default Sidebar;
