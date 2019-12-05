@@ -1,6 +1,6 @@
 import React from "react";
-import { Alert } from "./Alert";
-import { Control } from "./Control";
+import Alert from "./Alert";
+import Control from "./Control";
 
 class Center extends React.Component {
   constructor(props) {
