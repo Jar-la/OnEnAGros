@@ -5,10 +5,18 @@ class Date extends React.Component {
     super(props);
     
   }
+
+  searchIndex(dateValues){
+    for (let i of dateValues) {
+      if (typeof i === "object") {
+        return dateValues.indexOf(i);
+      }
+    }
+  }
   render() {
     const dateValues = Object.values(this.props.data.date);
-    console.log(dateValues);
-    dateValues.splice(4,1);
+    dateValues.splice(this.searchIndex(dateValues), 1);
+    
     return (
       <div>
         {dateValues.map((val, ind)=> {
