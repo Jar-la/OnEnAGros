@@ -12,7 +12,7 @@ class App extends React.Component{
   constructor(){
     super();
 
-    this.state = { data : {}}
+    this.state = { data: { date: {}, data: {}, "breaking news": {} } };
   }
 
   componentDidMount(){
@@ -20,7 +20,8 @@ class App extends React.Component{
     setInterval(this.updateData.bind(this), 5 * 1000);
   }
 
-  updateData(){
+
+  async updateData(){
     fetch("http://localhost:8080/data", {
       method: "get",
       headers: { "Content-Type": "application/json" }
