@@ -5,7 +5,7 @@ class ComPBar extends React.Component {
     this.state = {};
   }
   render() {
-    return <div class='ComPBar'></div>;
+    return <div className='ComPBar'></div>;
   }
 }
 

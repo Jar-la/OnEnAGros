@@ -9,7 +9,7 @@ class Center extends React.Component {
   }
   render() {
     return (
-      <div class='Center'>
+      <div className='Center'>
         <Alert />
         <Control />
       </div>

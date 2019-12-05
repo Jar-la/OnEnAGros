@@ -8,7 +8,7 @@ class Data extends React.Component {
     this.state = {};
   }
   render() {
-    return <div class='Data'></div>;
+    return <div className='Data'></div>;
   }
 }
 

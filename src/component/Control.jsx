@@ -6,7 +6,7 @@ class Control extends React.Component {
     this.state = {};
   }
   render() {
-    return <div class='Control'></div>;
+    return <div className='Control'></div>;
   }
 }
 
