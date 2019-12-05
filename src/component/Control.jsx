@@ -1,12 +1,16 @@
-import {} from "module";
+import React from "react";
 
-class Control extends Component {
+class Control extends React.Component {
   constructor(props) {
     super(props);
     this.state = {};
   }
   render() {
-    return <div class='Control'></div>;
+    return <div className='Control'>
+      <button className='ControleCenterButton'>Eau</button>
+      <button className='ControleCenterButton'>Air</button>
+      <button className='ControleCenterButton'>Nourriture</button>
+    </div>;
   }
 }
 

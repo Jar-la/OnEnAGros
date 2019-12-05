@@ -1,15 +1,17 @@
-import { Header } from "./Header";
-import { Center } from "./Center";
-import { Sidebar } from "./Sidebar";
+import React from "react";
+import Header from "./Header";
+import Center from "./Center";
+import Sidebar from "./Sidebar";
 
-class board extends Component {
+
+class Board extends React.Component {
   constructor(props) {
     super(props);
     this.state = {};
   }
   render() {
     return (
-      <div class='Board'>
+      <div className='Board'>
         <Header />
         <Sidebar />
         <Center />

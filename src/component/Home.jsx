@@ -1,13 +1,14 @@
-import { Board } from "./Board";
+import Board  from "./Board";
+import React from "react";
 
-class Home extends Component {
+class Home extends React.Component {
   constructor(props) {
     super(props);
     this.state = {};
   }
   render() {
     return (
-      <div class='home'>
+      <div className='home'>
         <board data={this.props.data} />
       </div>
     );
