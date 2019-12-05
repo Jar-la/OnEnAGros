@@ -6,7 +6,13 @@ class sidebar extends Component {
     this.state = {};
   }
   render() {
-    return <div class='Sidebar'></div>;
+    return (
+      <div class='Sidebar'>
+        <Data />
+        <Data />
+        <Data />
+      </div>
+    );
   }
 }
 

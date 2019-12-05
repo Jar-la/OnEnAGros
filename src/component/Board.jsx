@@ -8,7 +8,14 @@ class board extends Component {
     this.state = {};
   }
   render() {
-    return <div class='Board'></div>;
+    return (
+      <div class='Board'>
+        <Header />
+        <Sidebar />
+        <Center />
+        <Sidebar />
+      </div>
+    );
   }
 }
 
