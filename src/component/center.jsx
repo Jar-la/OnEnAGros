@@ -1,3 +1,6 @@
+import { alert } from "./alert";
+import { control } from "./control"
+ 
 class center extends Component {
     constructor(props) {
         super(props);

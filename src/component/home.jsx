@@ -1,3 +1,6 @@
+ import { board } from "./board";
+
+
 class home extends Component {
     constructor(props) {
         super(props);
