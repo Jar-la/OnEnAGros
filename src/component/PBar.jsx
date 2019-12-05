@@ -11,10 +11,10 @@ class PBar extends React.Component {
 
     isCritical(props){
         let diff = props.max - props.min;
-        let sMin = props.min + diff * 1.15;
-        let sMax = props.max - diff * 1.15;
+        let sMin = props.min + diff * props.seuil;
+        let sMax = props.max - diff * props.seuil;
         this.setState({
-            critical : (props.actual > sMin && props.actual < sMax) ? 
+            critical : (sMin < props.actual < sMax) ? 
                 true : false});
 
     }
@@ -22,10 +22,13 @@ class PBar extends React.Component {
     render(props) { 
         this.isCritical(props);
         return (
-            <ProgressBar 
-            animated now={(props.actual/props.max) * 100} 
-            striped variant = {this.critical ? "success":"danger"}
-            />
+            <div>
+                <ProgressBar 
+                animated now={(props.actual/props.max) * 100} 
+                striped variant = {this.critical ? "success":"danger"}/>
+                {this.state.critical}
+            </div>
+
         );
     }
 }
