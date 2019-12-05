@@ -8,7 +8,12 @@ class Center extends React.Component {
     this.state = {};
   }
   render() {
-    return <div class='Center'></div>;
+    return (
+      <div class='Center'>
+        <Alert />
+        <Control />
+      </div>
+    );
   }
 }
 

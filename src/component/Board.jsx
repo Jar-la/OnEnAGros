@@ -11,7 +11,14 @@ class Board extends React.Component {
     this.state = {};
   }
   render() {
-    return (<div class='Board'></div>);
+    return (
+      <div className='Board'>
+        <Header />
+        <Sidebar />
+        <Center />
+        <Sidebar />
+      </div>
+    );
   }
 }
 
