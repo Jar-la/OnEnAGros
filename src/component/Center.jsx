@@ -1,6 +1,7 @@
 import React from "react";
 import Alert from "./Alert";
 import Control from "./Control";
+import Date from "./Date";
 
 class Center extends React.Component {
   constructor(props) {
@@ -10,6 +11,7 @@ class Center extends React.Component {
   render() {
     return (
       <div className='Center'>
+        <Date />
         <Alert />
         <Control />
       </div>
