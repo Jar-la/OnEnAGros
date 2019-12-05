@@ -1,4 +1,5 @@
-class PBar extends Component {
+import React from "react";
+class PBar extends React.Component {
     constructor(props) {
         super(props);
         this.state = {  }

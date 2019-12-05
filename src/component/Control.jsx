@@ -1,6 +1,6 @@
-import {} from "module";
+import React from "react";
 
-class Control extends Component {
+class Control extends React.Component {
   constructor(props) {
     super(props);
     this.state = {};

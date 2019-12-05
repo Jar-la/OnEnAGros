@@ -1,4 +1,5 @@
-class Alert extends Component {
+import React from "react";
+class Alert extends React.Component {
   constructor(props) {
     super(props);
     this.state = {};
