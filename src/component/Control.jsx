@@ -1,4 +1,6 @@
 import React from "react";
+import ButtonGroup from 'react-bootstrap/ButtonGroup';
+import Button from 'react-bootstrap/Button';
 
 class Control extends React.Component {
   constructor(props) {
@@ -7,9 +9,13 @@ class Control extends React.Component {
   }
   render() {
     return <div className='Control'>
-      <button className='ControleCenterButton'>Eau</button>
-      <button className='ControleCenterButton'>Air</button>
-      <button className='ControleCenterButton'>Nourriture</button>
+      <div className="d-flex flex-column">
+        <ButtonGroup size="lg">
+          <Button>waterleau</Button>
+          <Button>chauffe marcel</Button>
+          <Button>space deliveroo</Button>
+        </ButtonGroup>
+      </div>
     </div>;
   }
 }
