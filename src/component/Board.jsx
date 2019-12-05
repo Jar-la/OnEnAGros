@@ -1,8 +1,8 @@
 import React from "react";
-import { Component } from "react";
-import { Header } from "./Header";
-import { Center } from "./Center";
-import { Sidebar } from "./Sidebar";
+import Component from "react";
+import Header from "./Header";
+import Center from "./Center";
+import Sidebar from "./Sidebar";
 
 
 class Board extends React.Component {
