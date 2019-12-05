@@ -9,8 +9,7 @@ class Header extends React.Component {
   render() {
     return (
       <div className="Header">
-        Header
-        <News />
+        {(this.props)? <News data={this.props.data} /> : ""}
       </div>
     );
   }

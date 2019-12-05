@@ -13,7 +13,6 @@ class Board extends React.Component {
   render() {
     return (
       <div className="Board">
-        {console.log(this.props.data)}
         <Header data={this.props.data["breaking news"]} />
         <Sidebar data={this.props.data.data} />
         <Center data={this.props.data} />
