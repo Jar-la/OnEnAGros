@@ -5,17 +5,12 @@ import ComPBar from "./ComPBar";
 class Data extends React.Component {
   constructor(props) {
     super(props);
-    let diff = props.max - props.min;
-    this.state = {
-      critical : ((props.actual < (props.min + diff * props.seuil)) || (props.actual > (props.min + diff * props.seuil)))
-    };
+    this.state = {};
   }
-
-
   render() {
     return <div className='Data'>
       
-      <PBar actual={4} critical = {true} />
+      <PBar min ={0} max={100} actual={90} seuil ={0.15} />
     </div>;
   }
 }

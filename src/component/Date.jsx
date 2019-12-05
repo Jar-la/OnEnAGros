@@ -19,13 +19,11 @@ class Date extends React.Component {
     
     return (
       <div>
+        <p>
         {dateValues.map((val, ind)=> {
-        return (
-          <h3 className="dateText" key={ind}>
-            {val}
-          </h3>
-        );
+        return (<span className={`span ${ind}`}>{val} </span>);
         })}
+        </p>      
       </div>
     );
   }
