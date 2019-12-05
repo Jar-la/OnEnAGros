@@ -16,6 +16,7 @@ class App extends React.Component{
   }
 
   componentDidMount(){
+    this.updateData();
     setInterval(this.updateData.bind(this), 5 * 1000);
   }
 

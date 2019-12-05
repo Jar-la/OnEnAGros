@@ -11,11 +11,11 @@ class Board extends React.Component {
   }
   render() {
     return (
-      <div className='Board'>
-        <Header />
-        <Sidebar />
-        <Center />
-        <Sidebar />
+      <div className="Board">
+        <Header data={this.props.data["breaking news"]} />
+        <Sidebar data={this.props.data.data} />
+        <Center data={this.props.data} />
+        <Sidebar data={this.props.data.data} />
       </div>
     );
   }

@@ -7,10 +7,10 @@ class Sidebar extends React.Component {
   }
   render() {
     return (
-      <div className='Sidebar'>
-        <Data />
-        <Data />
-        <Data />
+      <div className="Sidebar">
+        <Data data={this.props.data} />
+        <Data data={this.props.data} />
+        <Data data={this.props.data} />
       </div>
     );
   }
