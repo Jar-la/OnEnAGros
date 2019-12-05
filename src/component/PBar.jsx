@@ -19,9 +19,13 @@ class PBar extends React.Component {
 
     }
 
-    render() { 
+    render(props) { 
+        this.isCritical(props);
         return (
-            <ProgressBar />
+            <ProgressBar 
+            animated now={(props.actual/props.max) * 100} 
+            striped variant = {this.critical? "success":"danger"}
+            />
         );
     }
 }
