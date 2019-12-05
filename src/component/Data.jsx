@@ -2,7 +2,7 @@ import React from "react";
 import PBar from "./PBar";
 import ComPBar from "./ComPBar";
 
-class Data extends React.Component {
+class DataS extends React.Component {
   constructor(props) {
     super(props);
     let diff = props.max - props.min;
@@ -20,4 +20,4 @@ class Data extends React.Component {
   }
 }
 
-export default Data;
+export default DataS;
