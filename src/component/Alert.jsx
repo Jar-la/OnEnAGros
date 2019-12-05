@@ -5,7 +5,7 @@ class Alert extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      isCritical: false
+      isCritical: false,
     };
   }
 
@@ -29,7 +29,6 @@ class Alert extends React.Component {
 
   render() {
     return <div className="Alert">
-      {this.isCritical? this.getBadAlert() : this.getGoodAlert()} 
     </div>;
   }
 }
