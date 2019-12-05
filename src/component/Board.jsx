@@ -11,6 +11,7 @@ class Board extends React.Component {
     this.state = {};
   }
   render() {
+    console.log(this.props.doc);
     return (
       <div className="Board">
         <Header data={this.props.data["breaking news"]} />
