@@ -1,4 +1,4 @@
-import { Board } from "./Board";
+import Board  from "./Board";
 import React from "react";
 
 class Home extends React.Component {

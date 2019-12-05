@@ -1,4 +1,4 @@
-import { Data } from "./Data";
+import Data  from "./Data";
 import React from "react";
 class Sidebar extends React.Component {
   constructor(props) {
