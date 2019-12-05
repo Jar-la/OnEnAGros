@@ -4,9 +4,10 @@ import {default as AlertBoot} from 'react-bootstrap/Alert' ;
 class Alert extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      isCritical: false,
-    };
+  }
+
+  updateCritical(){
+    console.log(this.props.data);
   }
 
   getBadAlert(){
@@ -28,8 +29,9 @@ class Alert extends React.Component {
   }
 
   render() {
+    this.updateCritical();
     return <div className="Alert">
-      {this.state.isCritical? this.getBadAlert() : this.getGoodAlert()}
+      {this.props.data.isCritical? this.getBadAlert(this.props.data.criticalData) : this.getGoodAlert()}
     </div>;
   }
 }

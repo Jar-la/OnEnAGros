@@ -7,17 +7,20 @@ import Home from "./page/Home";
 
 import './App.css';
 
+
 class App extends React.Component{
 
   constructor(){
     super();
 
-    this.state = { data: { date: {}, data: {}, "breaking news": {} } };
+    this.state = { data: { date: {}, data: {}, "breaking news": {} }, doc: {}};
   }
 
   componentDidMount(){
     this.updateData();
     setInterval(this.updateData.bind(this), 5 * 1000);
+    this.baseValue();
+    
   }
 
 
@@ -30,7 +33,17 @@ class App extends React.Component{
       .then(json => this.setState({data : json}));
   }
 
+  async baseValue(){
+    fetch("http://localhost:8080/doc", {
+      method: "get",
+      headers: { "Content-Type": "application/json" }
+    })
+      .then(res => res.json())
+      .then(json => this.setState({doc : json}));
+  }
+
   render(){
+    console.log(this.state.doc);
     return (
       <div className="App">
         <link
@@ -44,7 +57,7 @@ class App extends React.Component{
             <Route
               exact
               path="/"
-              component={() => <Home data={this.state.data} />}
+              component={() => <Home data={this.state.data} doc={this.state.doc} />}
             />
             <Route path="*" component={ErrorNotFound} />
           </Switch>
