@@ -8,7 +8,10 @@ class Data extends React.Component {
     this.state = {};
   }
   render() {
-    return <div className='Data'></div>;
+    return <div className='Data'>
+      
+      <PBar min ={0} max={100} actual={50} seuil ={1.15} />
+    </div>;
   }
 }
 
