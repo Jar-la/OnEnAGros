@@ -21,7 +21,7 @@ class Date extends React.Component {
       <div>
         <p>
         {dateValues.map((val, ind)=> {
-        return (<span className={`span ${ind}`}>{val} </span>);
+        return (<span className={`span ${ind}`} key={ind}>{val} </span>);
         })}
         </p>      
       </div>
