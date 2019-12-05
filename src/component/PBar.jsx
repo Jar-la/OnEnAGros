@@ -24,7 +24,7 @@ class PBar extends React.Component {
         return (
             <ProgressBar 
             animated now={(props.actual/props.max) * 100} 
-            striped variant = {this.critical? "success":"danger"}
+            striped variant = {this.critical ? "success":"danger"}
             />
         );
     }
