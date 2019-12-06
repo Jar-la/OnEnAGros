@@ -2,9 +2,7 @@ import ProgressBar from "react-bootstrap/ProgressBar";
 import React from "react";
 
 class PBar extends React.Component {
-  constructor(props) {
-    super(props);
-  }
+
 
   render() {
     return (
@@ -15,8 +13,7 @@ class PBar extends React.Component {
           striped
           variant={this.props.critical ? "danger" : "success"}
         />
-        {this.props.critical}
-        {this.props.actual}
+        {`${this.props.actual.toFixed(3)} / 100`}
       </div>
     );
   }

@@ -83,7 +83,6 @@ class Board extends React.Component {
         <Header data={this.props.data["breaking news"]} />
         <SidebarL data={this.props.doc.data} />
         <Center data={this.props.data} doc={this.props.doc} />
-
         <SidebarR data={this.props.doc.data} />
       </div>
     );

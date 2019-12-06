@@ -31,7 +31,6 @@ class Alert extends React.Component {
     const min = parseFloat(element.min);
     const max = parseFloat(element.max);
     const value = parseFloat(element.value);
-    console.log(element);
     return ((value < (min + (max - min) * 0.15)) || (value > (max - (max - min) * 0.15)));
   }
   getBadAlert(){
@@ -54,19 +53,9 @@ class Alert extends React.Component {
 
   render() {
     this.updateCritical();
-<<<<<<< HEAD
-    return (
-      <div className='Alert'>
-        {this.props.data.isCritical
-          ? this.getBadAlert(this.props.data.criticalData)
-          : this.getGoodAlert()}
-      </div>
-    );
-=======
     return <div className="Alert">
       {this.props.data.isCritical? this.getBadAlert() : this.getGoodAlert()}
     </div>;
->>>>>>> dd370ee6e9bc847dfad31e6d9aeaffed0dca35cd
   }
 }
 

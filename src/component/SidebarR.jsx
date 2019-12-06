@@ -6,7 +6,6 @@ class SidebarR extends React.Component {
     this.state = {};
   }
   render() {
-    console.log(this.props);
     return (
       <div className='Sidebar'>
         <DataS data={this.props.data["energy use"]} />
