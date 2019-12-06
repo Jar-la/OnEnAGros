@@ -31,7 +31,6 @@ class Alert extends React.Component {
     const min = parseFloat(element.min);
     const max = parseFloat(element.max);
     const value = parseFloat(element.value);
-    console.log(element);
     return ((value < (min + (max - min) * 0.15)) || (value > (max - (max - min) * 0.15)));
   }
   getBadAlert(){

@@ -1,6 +1,8 @@
 import React from "react";
 import Button from 'react-bootstrap/Button';
 import fetch from "node-fetch";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTint, faSun, faUtensils} from "@fortawesome/free-solid-svg-icons";
 
 class Control extends React.Component {
   constructor(props) {
@@ -31,13 +33,39 @@ class Control extends React.Component {
   }
 
   render() {
-    return <div className='Control'>
-      <div>
-          <Button id= "to" className = "buttonA" variant="outline-success" onClick={this.waterleau}>waterleau</Button>
-          <Button id ="to2"className ="buttonA" variant="outline-success" onClick={this.chauffe_marcel}>chauffe marcel</Button>
-          <Button id ="to3" className="buttonA" variant="outline-success" onClick={this.space_deliveroo}>space deliveroo</Button>
+    return (
+      <div className="Control">
+        <div>
+          <Button
+            id="to"
+            className="buttonA"
+            variant="outline-success"
+            onClick={this.waterleau}
+          >
+            <FontAwesomeIcon icon={faTint} />
+            <span>waterleau</span>
+          </Button>
+          <Button
+            id="to2"
+            className="buttonA"
+            variant="outline-success"
+            onClick={this.chauffe_marcel}
+          >
+            <FontAwesomeIcon icon={faSun} />
+            <span>chauffe marcel</span>
+          </Button>
+          <Button
+            id="to3"
+            className="buttonA"
+            variant="outline-success"
+            onClick={this.space_deliveroo}
+          >
+            <FontAwesomeIcon icon={faUtensils} />
+            <span>space deliveroo</span>
+          </Button>
+        </div>
       </div>
-    </div>;
+    );
   }
 }
 
