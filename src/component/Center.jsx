@@ -16,7 +16,7 @@ class Center extends React.Component {
         <Date data={this.props.data} />
         <News data={this.props.data["breaking news"]} /> 
         <Control />
-        <Alert data={this.props.data} />
+        <Alert data={this.props.data} doc={this.props.doc}/>
       </div>
     );
   }
