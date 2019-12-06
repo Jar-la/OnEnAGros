@@ -1,9 +1,8 @@
 import React from "react";
 import Header from "./Header";
 import Center from "./Center";
-import SidebarR from "./Sidebar";
-
-
+import SidebarR from "./SidebarR";
+import SidebarL from "./SidebarL";
 
 class Board extends React.Component {
   constructor(props) {
@@ -38,52 +37,54 @@ class Board extends React.Component {
     };
   }
 
-  getCritical(ele){
-    return [ele.unit, ele.min,ele.max];
+  getCritical(ele) {
+    return [ele.unit, ele.min, ele.max];
   }
 
-  getActual(ele){
-    return (ele.value);
+  getActual(ele) {
+    return ele.value;
   }
 
-  getValues(nameElement){ // PREND LE NOM de l'élément et renvoie les info actuelle
+  getValues(nameElement) {
+    // PREND LE NOM de l'élément et renvoie les info actuelle
     let valActual = Object.values(this.props.data.data);
-    for(let a of valActual ){
-      if(a.name === nameElement){
+    for (let a of valActual) {
+      if (a.name === nameElement) {
         return this.getActual(a);
       }
     }
   }
 
-  getCritics(){
+  getCritics() {
     let valCritique = Object.values(this.props.doc.data);
-    for(let a of valCritique){
-      if(a.unit === undefined){
-        for(let b of Object.values(a)){
+    for (let a of valCritique) {
+      if (a.unit === undefined) {
+        for (let b of Object.values(a)) {
           const key = Object.keys(a).find(key => a[key] === b);
           let frenchName = this.state.equiList[key];
           b.value = this.getValues(frenchName);
           b.name = frenchName;
         }
       } else {
-        const key = Object.keys(this.props.doc.data).find(key => this.props.doc.data[key] === a);
+        const key = Object.keys(this.props.doc.data).find(
+          key => this.props.doc.data[key] === a
+        );
         let frenchName = this.state.equiList[key];
         a.value = this.getValues(frenchName);
         a.name = frenchName;
       }
+    }
   }
-}
 
-
-  render(){
+  render() {
     this.getCritics();
     console.log(this.props.doc.data);
     return (
-      <div className="Board">
+      <div className='Board'>
         <Header data={this.props.data["breaking news"]} />
-        <SidebarR data={this.props.data.data} />
-        <Center data={this.props.data} doc={this.props.doc}/>
-        <SidebarR data={this.props.data.data} />
+        <SidebarR data={this.props.doc.data} />
+        <Center data={this.props.data} />
+        <SidebarL data={this.props.doc.data} />
       </div>
     );
   }
