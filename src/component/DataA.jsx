@@ -4,8 +4,9 @@ import PBar from "./PBar";
 class DataA extends React.Component {
   moye() {
     let i = 0;
-
-    if (this.props.data !== undefined) {
+    console.log(i);
+    if (this.props.data["carbon dioxide"].value!== NaN) {
+        console.log(parseFloat(this.props.data["carbon dioxide"].value));
       i =i +
         parseFloat(this.props.data["carbon dioxide"].value) /
           parseFloat(this.props.data["carbon dioxide"].min);

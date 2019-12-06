@@ -11,9 +11,12 @@ class SidebarL extends React.Component {
   render() {
     return (
       <div className='Sidebar'>
-        <DataW id="Potabilité de l'eau" data={this.props.data.water} />
-        <DataA data={this.props.data.air} />
-        <DataF data={this.props.data.food} />
+        <DataW id="Potabilité de l'eau" data={this.props.data.water.calcium} />
+        <DataW id="Fiabilité de l'air" data={this.props.data.air.dioxygene} />
+        <DataW
+          id='Fiabilité de la nourriture'
+          data={this.props.data.food["escherichia coli"]}
+        />
       </div>
     );
   }
