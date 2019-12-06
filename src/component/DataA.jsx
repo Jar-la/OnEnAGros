@@ -4,19 +4,19 @@ import PBar from "./PBar";
 class DataA extends React.Component {
   moye() {
     let i = 0;
-
-    if (this.props.data !== undefined) {
-      console.log(this.props.data["carbon dioxide"].min);
+    console.log(i);
+    if (this.props.data["carbon dioxide"].value!== NaN) {
+        console.log(parseFloat(this.props.data["carbon dioxide"].value));
       i =i +
         parseFloat(this.props.data["carbon dioxide"].value) /
-          parseFloat(this.props.data["carbon dioxide"].max);
+          parseFloat(this.props.data["carbon dioxide"].min);
       console.log(i);
       i +=
         parseFloat(this.props.data["legionelle pneumophila"].value) /
-        parseFloat(this.props.data["legionelle pneumophila"].max);
+        parseFloat(this.props.data["legionelle pneumophila"].min);
       i +=
         parseFloat(this.props.data["sulphur dioxide"].value) /
-        parseFloat(this.props.data["sulphur dioxide"].max);
+        parseFloat(this.props.data["sulphur dioxide"].min);
       i +=
         parseFloat(this.props.data.dioxygene.value) /
         parseFloat(this.props.data.dioxygene.max);
