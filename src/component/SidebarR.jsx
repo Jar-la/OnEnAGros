@@ -7,7 +7,7 @@ class SidebarR extends React.Component {
   }
   render() {
     return (
-      <div className='Sidebar'>
+      <div className='SidebarR'>
         <DataS data={this.props.data["energy use"]} />
         <DataS data={this.props.data.temperature} />
         <DataS data={this.props.data["atmospheric pressure"]} />

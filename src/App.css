@@ -7,21 +7,27 @@ body {
 .Board {
   display: grid;
   grid-template-columns: 1fr 4fr 1fr;
-  grid-template-rows: 7em 600px;
-  grid-gap: 6px;
+  grid-template-rows: 3em 600px;
+
 }
 
 .Header {
-  background-color: #242424;
-  color: #fff;
+  background-color: #fff;
+  color: #000000;
   text-align: center;
+  text-transform: capitalize;
   grid-column: 1/ 4;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+
 .Control {
   text-align: center;
-  margin: 0 auto;
+  margin : auto;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(0,0,0,.05),0 0 0 1px rgba(63,63,68,.1);
+  background-color: #fff;
+  padding: 15px 5px;
 }
 
 .Control button {
@@ -90,58 +96,33 @@ body {
   color: #fff;
   background-color: #0070ad;
 }
-.Sidebar {
+.SidebarR {
   display: grid;
-  background: rgb(18, 173, 189);
-  background: linear-gradient(
-    45deg,
-    rgba(18, 173, 189, 1) 0%,
-    rgba(0, 112, 173, 1) 96%,
-    rgba(0, 212, 255, 1) 100%
-  );
+  background: #002133;
+  color: #fff;
 }
-
+.SidebarL {
+  display: grid;
+  background: #002133;
+  color: #fff;
+}
 .Center {
   display: grid;
   grid-template-rows: 1fr 3fr 3fr;
   grid-gap: 3px;
-  background: rgb(149, 230, 22);
-  background: radial-gradient(
-    circle,
-    rgba(149, 230, 22, 1) 0%,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(11, 148, 214, 1) 0%,
-    rgba(0, 212, 255, 1) 100%
-  );
+  background-color: #f7f7f8;
+}
+  
+.Date{
+  text-align: center;
+  font-weight: bold;
 }
 
 .News {
   text-align: center;
 }
 .Data {
-  background-color: #12adbd;
-  background: rgb(18, 173, 189);
-  background: linear-gradient(
-    45deg,
-    rgba(18, 173, 189, 1) 0%,
-    rgba(0, 112, 173, 1) 96%,
-    rgba(0, 212, 255, 1) 100%
-  );
-}
-_.tracking-in-expand {
-  animation: tracking-in-expand 0.7s cubic-bezier(0.6, 0.04, 0.98, 0.335) both;
-}
-@keyframes tracking-in-expand {
-  0% {
-    letter-spacing: -0.5em;
-    opacity: 0;
-  }
-  40% {
-    opacity: 0.6;
-  }
-  100% {
-    opacity: 1;
-  }
+  color: #fff;
 }
 
 #Logo {
