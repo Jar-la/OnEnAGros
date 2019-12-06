@@ -6,25 +6,26 @@ class DataA extends React.Component {
     let i = 0;
 
     if (this.props.data !== undefined) {
+      console.log(this.props.data["carbon dioxide"].min);
       i =i +
         parseFloat(this.props.data["carbon dioxide"].value) /
-          parseFloat(this.props.data["carbon dioxide"].min);
+          parseFloat(this.props.data["carbon dioxide"].max);
       console.log(i);
       i +=
         parseFloat(this.props.data["legionelle pneumophila"].value) /
-        parseFloat(this.props.data["legionelle pneumophila"].min);
+        parseFloat(this.props.data["legionelle pneumophila"].max);
       i +=
         parseFloat(this.props.data["sulphur dioxide"].value) /
-        parseFloat(this.props.data["sulphur dioxide"].min);
+        parseFloat(this.props.data["sulphur dioxide"].max);
       i +=
         parseFloat(this.props.data.dioxygene.value) /
-        parseFloat(this.props.data.dioxygene.min);
+        parseFloat(this.props.data.dioxygene.max);
       i +=
         parseFloat(this.props.data.dinitrogen.value) /
-        parseFloat(this.props.data.dinitrogen.min);
+        parseFloat(this.props.data.dinitrogen.max);
       i +=
         parseFloat(this.props.data["carbon monoxide"].value) /
-        parseFloat(this.props.data["carbon monoxide"].min);
+        parseFloat(this.props.data["carbon monoxide"].max);
       //i +=
       // this.props.data["nitrogen dioxide"].value / this.props.data["nitrogen dioxide"].min;
 

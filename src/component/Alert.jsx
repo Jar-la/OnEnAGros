@@ -4,10 +4,7 @@ import { default as AlertBoot } from "react-bootstrap/Alert";
 class Alert extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      isCritical: false,
-      criticalList: {}
-    };
+    this.isCritical = false;
   }
 //sMin = min + (max-min) * 0.15
 //sMax = max - (max-min) * 0.15 
@@ -17,12 +14,12 @@ class Alert extends React.Component {
       if(a.unit === undefined){
         for(let b of Object.values(a)){
           if(this.getCriticalELement(b)){
-            this.state.isCritical = true;
+            this.isCritical = true;
           }
         }
       } else {
         if(this.getCriticalELement(a)){
-          this.state.isCritical = true;
+          this.isCritical = true;
         }
       }
   }
@@ -54,7 +51,7 @@ class Alert extends React.Component {
   render() {
     this.updateCritical();
     return <div className="Alert">
-      {this.props.data.isCritical? this.getBadAlert() : this.getGoodAlert()}
+      {this.isCritical? this.getBadAlert() : this.getGoodAlert()}
     </div>;
   }
 }
