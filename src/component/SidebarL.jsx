@@ -10,7 +10,7 @@ class SidebarL extends React.Component {
   }
   render() {
     return (
-      <div className='Sidebar'>
+      <div className='SidebarL'>
         <DataW id="Potabilité de l'eau" data={this.props.data.water.calcium} />
         <DataW id="Fiabilité de l'air" data={this.props.data.air.dioxygene} />
         <DataW
