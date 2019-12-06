@@ -10,8 +10,13 @@ class Board extends React.Component {
     super(props);
     this.state = {};
   }
+
+  getCriticalDoc(ele){
+    return [ele.unit, ele.min,ele.max];
+  }
+
+
   render() {
-    console.log(this.props.doc);
     return (
       <div className="Board">
         <Header data={this.props.data["breaking news"]} />
