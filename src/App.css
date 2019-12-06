@@ -58,5 +58,9 @@ background: radial-gradient(circle, rgba(149,230,22,1) 0%, rgba(255,255,255,1) 0
 #Logo{
   text-align: center;
   font-size: 4em;
+  font-family:"palatino linotype", palatino, serif;
+  border-style: solid;
+  margin-left: 10em;
+  margin-right: 10em;
   
 }
