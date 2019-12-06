@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 
 body {
   background-color: #f7f7f8;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 .Board {
   display: grid;
@@ -16,21 +16,21 @@ body {
   color: #fff;
   text-align: center;
   grid-column: 1/ 4;
-  border-bottom: 1px solid rgba(0,0,0,.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .Control {
   text-align: center;
-  margin : 0 auto;
+  margin: 0 auto;
 }
 
-.Control button{
+.Control button {
   margin: 0 15px;
-  opacity: .86;
+  opacity: 0.86;
   border-radius: 4px;
 }
 
-.Control button svg{
+.Control button svg {
   font-size: 28px;
   margin-right: 15px;
   line-height: 30px;
@@ -38,7 +38,7 @@ body {
   text-align: center;
 }
 
-.Control button span{
+.Control button span {
   margin: 0;
   line-height: 30px;
   font-size: 12px;
@@ -46,55 +46,51 @@ body {
   text-transform: uppercase;
 }
 
-#to{
+#to {
   text-transform: uppercase;
   padding: 10px;
   color: #0070ad;
-  letter-spacing: 2px; 
+  letter-spacing: 2px;
   line-height: 50px;
   border: 2px solid #0070ad;
   background-color: #fff;
 }
 
-#to:hover{
-  color:#fff;
+#to:hover {
+  color: #fff;
   background-color: #0070ad;
-
 }
 
-#to2{
+#to2 {
   text-transform: uppercase;
   color: #0070ad;
-  letter-spacing: 2px; 
-  line-height: 50px;
-  border: 2px solid #0070ad;
-  background-color: #fff;
-  padding: 10px;
-}
-
-#to2:hover{
-  color:#fff;
-  background-color: #0070ad;
-  
-}
-
-#to3{
-  text-transform: uppercase;
-  color: #0070ad;
-  letter-spacing: 2px; 
+  letter-spacing: 2px;
   line-height: 50px;
   border: 2px solid #0070ad;
   background-color: #fff;
   padding: 10px;
 }
 
-#to3:hover{
-  color:#fff;
+#to2:hover {
+  color: #fff;
   background-color: #0070ad;
-  
+}
+
+#to3 {
+  text-transform: uppercase;
+  color: #0070ad;
+  letter-spacing: 2px;
+  line-height: 50px;
+  border: 2px solid #0070ad;
+  background-color: #fff;
+  padding: 10px;
+}
+
+#to3:hover {
+  color: #fff;
+  background-color: #0070ad;
 }
 .Sidebar {
-  _background-color: yellow;
   display: grid;
   background: rgb(18, 173, 189);
   background: linear-gradient(
