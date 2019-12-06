@@ -63,6 +63,7 @@ class Board extends React.Component {
           const key = Object.keys(a).find(key => a[key] === b);
           let frenchName = this.state.equiList[key];
           b.value = this.getValues(frenchName);
+          b.name = frenchName;
         }
       } else {
         const key = Object.keys(this.props.doc.data).find(
@@ -70,6 +71,7 @@ class Board extends React.Component {
         );
         let frenchName = this.state.equiList[key];
         a.value = this.getValues(frenchName);
+        a.name = frenchName;
       }
     }
   }
