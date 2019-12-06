@@ -1,22 +1,23 @@
-
+import Board from "../component/Board";
 import React from "react";
-import logo from '../logo.svg';
 
-export default function ErrorNotFound() {
-  return (
-    <header className="App-header">
-      <img src={logo} className="App-logo" alt="logo" />
-      <p>
-        Edit <code>src/App.js</code> and save to reload. Ce n'est qu'un test
-      </p>
-      <a
-        className="App-link"
-        href="https://reactjs.org"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Learn React
-      </a>
-    </header>
-  );
+class Home extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
+  render() {
+    return (
+      <div className="home">
+        {this.props.doc.webServices !== undefined &&
+        this.props.data.date !== undefined ? (
+          <Board data={this.props.data} doc={this.props.doc} />
+        ) : (
+          ""
+        )}
+      </div>
+    );
+  }
 }
+
+export default Home;
