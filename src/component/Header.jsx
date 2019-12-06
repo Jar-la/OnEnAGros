@@ -1,5 +1,6 @@
 import React from "react";
 import News from "./News";
+import Badge from "./Badge";
 
 class Header extends React.Component {
   constructor(props) {
@@ -9,6 +10,8 @@ class Header extends React.Component {
   render() {
     return (
       <div className="Header">
+        Header
+        <Badge />
         {(this.props)? <News data={this.props.data} /> : ""}
       </div>
     );
