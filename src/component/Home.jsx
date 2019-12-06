@@ -8,8 +8,8 @@ class Home extends React.Component {
   }
   render() {
     return (
-      <div className='home'>
-        <board data={this.props.data} doc={this.props.doc}/>
+      <div className="home">
+        <Board data={this.props.data} doc={this.props.doc} />
       </div>
     );
   }
