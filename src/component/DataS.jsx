@@ -8,16 +8,20 @@ class DataS extends React.Component {
     this.state = {};
   }
   render() {
-    let critic =
-      this.props.min + (this.props.max - this.props.min) * 0.15 <
-      this.props.value <
-      this.props.max - (this.props.max - this.props.min) * 0.15
-        ? false
-        : true;
+    let diff = (this.props.data.max - this.props.data.min) * 0.15;
+    let sMin = parseFloat(this.props.data.min) + diff;
+    let sMax = parseFloat(this.props.data.max) - diff;
+    let critic = sMin < parseFloat(this.props.data.value) < sMax ? false : true;
+    console.log(diff);
+    console.log(this.props.data.min, sMin, sMax, this.props.data.max);
     return (
-      <div className='DataS' id={this.props.name}>
-        {this.props.name}
-        <PBar actual={this.props.value} critical={critic} />
+      <div className='DataS' id={this.props.data.name}>
+        <p>{this.props.data.value}</p> <p>{this.props.data.max}</p>
+        <p>{this.props.data.name}</p>
+        <PBar
+          actual={(this.props.data.value / this.props.data.max) * 100}
+          critical={critic}
+        />
       </div>
     );
   }

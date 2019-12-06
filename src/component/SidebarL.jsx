@@ -1,7 +1,6 @@
 import DataC from "./DataC";
 import React from "react";
 
-
 class SidebarL extends React.Component {
   constructor(props) {
     super(props);

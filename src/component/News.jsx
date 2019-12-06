@@ -4,7 +4,7 @@ class News extends React.Component {
   
   render() {
     const newsValues = Object.values(this.props.data);
-    console.log(newsValues);
+
     return (
 
       <div className = "News" gravité = {newsValues[2]}>
