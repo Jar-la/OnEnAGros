@@ -11,9 +11,9 @@ class Board extends React.Component {
     this.state = {};
   }
   render() {
+    console.log(this.props.doc);
     return (
       <div className="Board">
-        {console.log(this.props.data)}
         <Header data={this.props.data["breaking news"]} />
         <SidebarR data={this.props.data.data} />
         <Center data={this.props.data} />

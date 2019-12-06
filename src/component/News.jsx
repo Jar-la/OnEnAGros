@@ -1,12 +1,19 @@
 import React from "react";
 
 class News extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
+  
   render() {
-    return <div className='News'></div>;
+    const newsValues = Object.values(this.props.data);
+    return (<div className='News'>
+      {newsValues.map((val, idx)=>{
+        return (
+          <span className={`span ${idx}`} key={idx}>
+            {val}
+            <br />
+          </span>
+        );
+      })}
+    </div>);
   }
 }
 

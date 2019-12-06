@@ -7,9 +7,10 @@ class Home extends React.Component {
     this.state = {};
   }
   render() {
+    console.log(this.props.doc);
     return (
       <div className='home'>
-        <board data={this.props.data} />
+        <board data={this.props.data} doc={this.props.doc}/>
       </div>
     );
   }

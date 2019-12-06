@@ -12,7 +12,7 @@ class Header extends React.Component {
       <div className="Header">
         Header
         <Badge />
-        <News />
+        {(this.props)? <News data={this.props.data} /> : ""}
       </div>
     );
   }
