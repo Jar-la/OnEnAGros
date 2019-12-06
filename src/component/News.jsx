@@ -4,16 +4,18 @@ class News extends React.Component {
   
   render() {
     const newsValues = Object.values(this.props.data);
-    return (<div className='News'>
-      {newsValues.map((val, idx)=>{
-        return (
-          <span className={`span ${idx}`} key={idx}>
-            {val}
-            <br />
-          </span>
-        );
-      })}
-    </div>);
+    console.log(newsValues);
+    return (
+
+      <div className = "News" gravité = {newsValues[2]}>
+        <div id = 'NewsTitle'>
+          {newsValues[0]}
+        </div>
+        <div id = 'NewsArticle'>
+          {newsValues[1]}
+        </div>
+      </div>
+    );
   }
 }
 

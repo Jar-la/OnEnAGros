@@ -1,5 +1,4 @@
 import React from "react";
-import News from "./News";
 import Badge from "./Badge";
 
 class Header extends React.Component {
@@ -11,7 +10,6 @@ class Header extends React.Component {
     return (
       <div className="Header">
         <Badge />
-        {(this.props)? <News data={this.props.data} /> : ""}
       </div>
     );
   }
