@@ -28,9 +28,9 @@ class Alert extends React.Component {
   }
   }
   getCriticalELement(element){
-    const min = element.min;
-    const max = element.max;
-    const value = element.value;
+    const min = parseFloat(element.min);
+    const max = parseFloat(element.max);
+    const value = parseFloat(element.value);
     console.log(element);
     return ((value < (min + (max - min) * 0.15)) || (value > (max - (max - min) * 0.15)));
   }
