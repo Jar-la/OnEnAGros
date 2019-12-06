@@ -13,7 +13,7 @@ class Center extends React.Component {
       <div className="Center">
         <Date data={this.props.data} />
         <Control />
-        <Alert data={this.props.data} />
+        <Alert data={this.props.data} doc={this.props.doc}/>
       </div>
     );
   }
