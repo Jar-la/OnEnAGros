@@ -1,5 +1,6 @@
 import React from "react";
 import PBar from "./PBar";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 class DataS extends React.Component {
   constructor(props) {
@@ -13,7 +14,7 @@ class DataS extends React.Component {
     let critic = sMin < parseFloat(this.props.data.value) < sMax ? false : true;
     return (
       <div className='DataS' id={this.props.data.name}>
-        <p>{this.props.id}</p>
+        <p><FontAwesomeIcon icon={this.props.icon}></FontAwesomeIcon>{this.props.id}</p>
         <PBar
           actual={(this.props.data.value / this.props.data.max) * 100}
           critical={critic}

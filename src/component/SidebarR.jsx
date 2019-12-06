@@ -1,5 +1,6 @@
 import DataS from "./DataS";
 import React from "react";
+import { faBatteryHalf, faTemperatureLow, faUserTie } from "@fortawesome/free-solid-svg-icons";
 class SidebarR extends React.Component {
   constructor(props) {
     super(props);
@@ -7,10 +8,13 @@ class SidebarR extends React.Component {
   }
   render() {
     return (
-      <div className='SidebarR'>
-        <DataS data={this.props.data["energy use"]} />
-        <DataS data={this.props.data.temperature} />
-        <DataS data={this.props.data["atmospheric pressure"]} />
+      <div className="SidebarR">
+        <DataS icon={faBatteryHalf} data={this.props.data["energy use"]} />
+        <DataS icon={faTemperatureLow} data={this.props.data.temperature} />
+        <DataS
+          icon={faUserTie}
+          data={this.props.data["atmospheric pressure"]}
+        />
       </div>
     );
   }

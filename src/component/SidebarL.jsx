@@ -1,7 +1,6 @@
 import DataW from "./DataW";
-import DataA from "./DataA";
-import DataF from "./DataF";
 import React from "react";
+import { faTint, faWind, faHamburger } from "@fortawesome/free-solid-svg-icons";
 
 class SidebarL extends React.Component {
   constructor(props) {
@@ -10,11 +9,20 @@ class SidebarL extends React.Component {
   }
   render() {
     return (
-      <div className='SidebarL'>
-        <DataW id="Potabilité de l'eau" data={this.props.data.water.calcium} />
-        <DataW id="Fiabilité de l'air" data={this.props.data.air.dioxygene} />
+      <div className="SidebarL">
         <DataW
-          id='Fiabilité de la nourriture'
+          icon={faTint}
+          id="Potabilité de l'eau"
+          data={this.props.data.water.calcium}
+        />
+        <DataW
+          icon={faWind}
+          id="Fiabilité de l'air"
+          data={this.props.data.air.dioxygene}
+        />
+        <DataW
+          icon={faHamburger}
+          id="Fiabilité de la nourriture"
           data={this.props.data.food["escherichia coli"]}
         />
       </div>
