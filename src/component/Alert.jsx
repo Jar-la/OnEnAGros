@@ -1,5 +1,5 @@
 import React from "react";
-import {default as AlertBoot} from 'react-bootstrap/Alert' ;
+import { default as AlertBoot } from "react-bootstrap/Alert";
 
 class Alert extends React.Component {
   constructor(props) {

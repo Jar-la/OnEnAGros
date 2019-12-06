@@ -78,13 +78,12 @@ class Board extends React.Component {
 
   render() {
     this.getCritics();
-    console.log(this.props.doc.data);
     return (
       <div className='Board'>
         <Header data={this.props.data["breaking news"]} />
-        <SidebarR data={this.props.doc.data} />
-        <Center data={this.props.data} doc={this.props.doc}/>
         <SidebarL data={this.props.doc.data} />
+        <Center data={this.props.data} doc={this.props.doc} />
+        <SidebarR data={this.props.doc.data} />
       </div>
     );
   }

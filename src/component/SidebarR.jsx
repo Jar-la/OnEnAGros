@@ -8,9 +8,9 @@ class SidebarR extends React.Component {
   render() {
     return (
       <div className='Sidebar'>
-        <DataS id='energy' data={this.props["energy use"]} />
-        <DataS id='temperature' data={this.props.temperature} />
-        <DataS id='atmospheric presse' data={this.props["atmospheric pressure"]} />
+        <DataS data={this.props.data["energy use"]} />
+        <DataS data={this.props.data.temperature} />
+        <DataS data={this.props.data["atmospheric pressure"]} />
       </div>
     );
   }

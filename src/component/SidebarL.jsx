@@ -1,6 +1,7 @@
-import DataC from "./DataC";
+import DataW from "./DataW";
+import DataA from "./DataA";
+import DataF from "./DataF";
 import React from "react";
-
 
 class SidebarL extends React.Component {
   constructor(props) {
@@ -10,9 +11,9 @@ class SidebarL extends React.Component {
   render() {
     return (
       <div className='Sidebar'>
-        <DataC data={this.props.water} />
-        <DataC data={this.props.air} />
-        <DataC data={this.props.food} />
+        <DataW id="Potabilité de l'eau" data={this.props.data.water} />
+        <DataA data={this.props.data.air} />
+        <DataF data={this.props.data.food} />
       </div>
     );
   }
