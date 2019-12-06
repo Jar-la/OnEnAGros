@@ -10,7 +10,7 @@ class DataS extends React.Component {
   render() {
     return <div className='Data'>
       
-      <PBar min ={0} max={100} actual={90} seuil ={0.15} />
+      <PBar min ={this.props.min} max={this.props.max} actual={90} seuil ={0.15} />
     </div>;
   }
 }

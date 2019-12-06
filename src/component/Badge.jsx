@@ -1,17 +1,9 @@
 import React from "react";
 
-class Badge extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {  }
-    }
-    render() { 
-        return ( 
-            <div className="badge">
-                
-            </div>
-         );
-    }
-}
+const Badge = () => (
+    <div id ="Logo" className="tracking-in-expand">
+        {"Selene2019"}
+    </div>
+)
  
 export default Badge;

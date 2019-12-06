@@ -1,5 +1,4 @@
 import React from "react";
-import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import Button from 'react-bootstrap/Button';
 import fetch from "node-fetch";
 
@@ -33,12 +32,10 @@ class Control extends React.Component {
 
   render() {
     return <div className='Control'>
-      <div className="d-flex flex-column">
-        <ButtonGroup size="lg">
-          <Button onClick={this.waterleau}>waterleau</Button>
-          <Button onClick={this.chauffe_marcel}>chauffe marcel</Button>
-          <Button onClick={this.space_deliveroo}>space deliveroo</Button>
-        </ButtonGroup>
+      <div>
+          <Button id= "to" className = "buttonA" variant="outline-success" onClick={this.waterleau}>waterleau</Button>
+          <Button id ="to2"className ="buttonA" variant="outline-success" onClick={this.chauffe_marcel}>chauffe marcel</Button>
+          <Button id ="to3" className="buttonA" variant="outline-success" onClick={this.space_deliveroo}>space deliveroo</Button>
       </div>
     </div>;
   }
